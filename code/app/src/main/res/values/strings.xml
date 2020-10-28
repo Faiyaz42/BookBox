@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">BookBox</string>
     <string name="welcome_message">Welcome to BookBox</string>
     <string name="account_registration">Account Registration</string>
@@ -62,6 +62,68 @@
     <string name="image4">image4</string>
     <string name="image5">image5</string>
     <string name="image1">image1</string>
+    <string name="bookboxitem">Bookbox Item</string>
+    <string name="statusavailable">Status : Available</string>
+    <string name="bookboxitem_title" tools:ignore="StringEscaping">Man's Search For Meaning</string>
+    <string name="bookboxitem_author">Viktor Frankl</string>
+    <string name="bookboxitem_profile">BookBox item picture</string>
+    <string name="bookboxitem_isbn">987651BWI</string>
+    <string name="borrower">Borrower : None</string>
+    <string name="owner">Owner : Me</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="viewrequests">View Requests</string>
+    <string name="camera">Camera</string>
+    <string name="othersbookboxitem">otherbookbox picture</string>
+    <string name="othersstatusavailable">Status : Available</string>
+    <string name="othersbookboxitem_title" tools:ignore="StringEscaping">Man's Search For Meaning</string>
+    <string name="othersbookboxitem_author">Viktor Frankl</string>
+    <string name="othersbookboxitem_isbn">918056365BWI</string>
+    <string name="othersborrower">Borrower : None</string>
+    <string name="othersowner">Owner : Sandra</string>
+    <string name="request">Request Book</string>
+    <string name="profile_button">profile button</string>
+    <string name="name">Name</string>
+    <string name="othersname">Name</string>
+    <string name="othersemail">someone@gmail.com</string>
+    <string name="othersphone">+1 123456789</string>
+    <string name="requests">Requests</string>
+    <string name="number_of_requests">You have 2 new requests.</string>
+    <string name="nameofbook" tools:ignore="StringEscaping">Man's Search For Meaning.</string>
+    <string name="go">Go</string>
+    <string name="request_">Request</string>
+    <string name="from">From : Sandra</string>
+    <string name="bookname">Harry Potter</string>
+    <string name="authorname">JK Rowling</string>
+    <string name="isbn1">79384002BWI</string>
+    <string name="setlocation">Set Location</string>
+    <string name="handover">Hand Over</string>
+    <string name="book_image">book image</string>
+    <string name="request_accepted">Accepted Request</string>
+    <string name="seelocation">See Location</string>
+    <string name="receive">Receive</string>
+    <string name="return_">Return</string>
+    <string name="returnto">Return to : Sandra</string>
+    <string name="returnbookname">Harry Potter</string>
+    <string name="returnauthorname">JK Rowling</string>
+    <string name="returnisbn1">8900880BWI</string>
+    <string name="returnseelocation">See Location</string>
+    <string name="receivefrom">From : Jacob1222</string>
+    <string name="receivebookname">Harry Potter</string>
+    <string name="receiveauthorname">JK Rowling</string>
+    <string name="receiveisbn1">687986689BWI</string>
+    <string name="receiveseelocation">See Location</string>
+    <string name="picture">picture</string>
+    <string name="changepicture">Change Picture</string>
+    <string name="picture1">Picture 1</string>
+    <string name="picture5">Picture 5</string>
+    <string name="picture4">Picture 4</string>
+    <string name="picture3">Picture 3</string>
+    <string name="picture2">Picture 2</string>
+    <string name="picture6">Picture 6</string>
+    <string name="cancel">Cancel</string>
+    <string name="pickpicture">Pick a picture!</string>
+
 
     <string-array name="filter_statuses">
         <item>Filter by</item>
