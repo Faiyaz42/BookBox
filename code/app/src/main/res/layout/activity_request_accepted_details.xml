@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/colorDarkBgd"
+        app:itemTextColor="@color/colorDarkText"
+        app:itemIconSize="50sp"
+        android:background="@color/colorWhiteBgd"
+        app:menu="@menu/bottom_nav_bar" />
+
+
+    <TextView
+        android:id="@+id/request_accepted_textView"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="14dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/request_accepted"
+        android:textColor="@color/colorPurpleTitle"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/requestacceptedfrom"
+        android:layout_width="177dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/request_accepted_textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/from"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/requestacceptedimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
+        android:layout_below="@+id/requestacceptedfrom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="164dp"
+        app:srcCompat="@drawable/ic_custom_image"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/book_image" />
+
+    <TextView
+        android:id="@+id/requestacceptedbookname"
+        android:layout_width="178dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/requestacceptedimageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/bookname"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/requestacceptedauthor"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/requestacceptedbookname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="111dp"
+        android:text="@string/authorname"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/requestacceptedisbn"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requestacceptedauthor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/isbn1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/seelocation"
+        android:layout_width="146dp"
+        android:layout_height="63dp"
+        android:layout_above="@+id/bottom_nav_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="93dp"
+        android:text="@string/seelocation" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="52dp"
+        android:contentDescription="@string/scan_isbn"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <Button
+        android:id="@+id/receive"
+        android:layout_width="148dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="571dp"
+        android:layout_marginEnd="43dp"
+        android:layout_toStartOf="@+id/imageButton"
+        android:text="@string/receive" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/requests_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="@string/requests"
+            android:textColor="@color/colorPurpleTitle"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/bookname_requests_textView"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="5dp"
+            android:text="@string/nameofbook"
+            android:textColor="@color/colorDarkText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/requests_notification"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorYellowBgd"
+            android:padding="5dp"
+            android:text="@string/number_of_requests"
+            android:textColor="@color/colorDarkText"
+            android:textSize="15sp" />
+
+        <ListView
+            android:id="@+id/main_page_books_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/colorDarkBgd"
+        app:itemTextColor="@color/colorDarkText"
+        app:itemIconSize="50sp"
+        android:background="@color/colorWhiteBgd"
+        app:menu="@menu/bottom_nav_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="654dp"
+        android:layout_above="@id/bottom_nav_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-3dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bookboxitem_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="40dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/bookboxitem"
+                android:textColor="@color/colorPurpleTitle"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_bookboxitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginTop="133dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bookboxitem_imageView"
+                    android:layout_width="134dp"
+                    android:layout_height="134dp"
+                    android:contentDescription="@string/bookboxitem_profile"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_custom_image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/add_picture_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/add_picture" />
+
+                    <Button
+                        android:id="@+id/remove_picture_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:enabled="false"
+                        android:text="@string/remove_picture" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bookboxitem_status_textView"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/statusavailable"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title_bookboxitem"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="349dp"
+                android:text="@string/title"
+                android:textColor="#050505"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookboxitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="317dp"
+                android:text="@string/bookboxitem_title" />
+
+            <TextView
+                android:id="@+id/author_bookboxitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="278dp"
+                android:text="@string/author"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookboxitem_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="244dp"
+                android:text="@string/bookboxitem_author" />
+
+            <TextView
+                android:id="@+id/isbn_bookboxitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="207dp"
+                android:text="@string/isbn"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/bookboxitem_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="174dp"
+                android:text="@string/bookboxitem_isbn" />
+
+            <TextView
+                android:id="@+id/bookboxitem_borrower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="133dp"
+                android:text="@string/borrower"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bookboxitem_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginBottom="98dp"
+                android:text="@string/owner"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bookboxitem_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/update" />
+
+            <Button
+                android:id="@+id/bookboxitem_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toStartOf="@+id/bookboxitem_button3"
+                android:layout_toEndOf="@+id/bookboxitem_button1"
+                android:text="@string/delete" />
+
+            <Button
+                android:id="@+id/bookboxitem_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/viewrequests" />
+
+            <ImageButton
+                android:id="@+id/bookboxitem_imageButton"
+                android:layout_width="40dp"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="183dp"
+                android:layout_marginEnd="63dp"
+                android:layout_marginBottom="161dp"
+                android:layout_toEndOf="@+id/bookboxitem_isbn"
+                android:contentDescription="@string/camera"
+                app:srcCompat="@drawable/ic_camera" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/colorDarkBgd"
+        app:itemTextColor="@color/colorDarkText"
+        app:itemIconSize="50sp"
+        android:background="@color/colorWhiteBgd"
+        app:menu="@menu/bottom_nav_bar" />
+
+</RelativeLayout>
