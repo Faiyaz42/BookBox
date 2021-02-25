@@ -6,7 +6,7 @@ An Android application that allows users to list the books they own, loan them o
 
 Note: In order to run the app,you would need an Android emulator installed on your system.
 
-Instructions on Android emulators can be found here:https://developer.android.com/studio/run/emulator
+Instructions on Android emulators can be found here: https://developer.android.com/studio/run/emulator
 
 ### Demo - https://youtu.be/dnKkCAykg50
 
